@@ -48,7 +48,8 @@ export default {
 <style scoped>
 .tab-bar-item {
   flex: 1;/*均匀分配元素*/
-  /* height: 49px;很多android ios设置tabbar高度49px */
+  height: 49px;
+  /* 很多android ios设置tabbar高度49px */
   text-align: center;
 }
 /* .img-slot {
