@@ -7,6 +7,7 @@ const Home = () => import('../views/home/Home.vue')
 const Cart = () => import('../views/cart/Cart.vue')
 const Category = () => import('../views/category/Category.vue')
 const Profile = () => import('../views/profile/Profile.vue')
+const Detial = () => import ('../views/detial/Detial.vue')
 
 
 // vue-router重写push方法，解决相同路径跳转报错
@@ -43,7 +44,11 @@ const routes = [
   {
     path: '/profile',
     component: Profile
-  }
+  },
+  {
+    path: '/Detail/:iid',
+    component: Detial
+  },
 ]
 const router = new createRouter({
   history: createWebHistory(process.env.BASE_URL),
